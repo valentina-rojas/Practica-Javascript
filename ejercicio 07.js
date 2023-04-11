@@ -1,16 +1,22 @@
 //Ingresar dos números y mostrar los múltiplos de 3 comprendidos entre ambos.
 
-const n1= 2
-const n2 = 30
+let inicio= 5
+let fin = 50
 
 let i = n1 + 1
 
-while (i<n2) {
+while (i<fin) {
 
     if ( i % 3 === 0) {
         console.log (i)
+        i++
     }
    
-    i++
+    
 }
 
+
+for (inicio; inicio <= fin; inicio++){
+
+    
+}
