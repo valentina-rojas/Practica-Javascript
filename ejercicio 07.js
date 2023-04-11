@@ -3,6 +3,8 @@
 let inicio= 5
 let fin = 50
 
+
+
 let i = n1 + 1
 
 while (i<fin) {
@@ -12,11 +14,14 @@ while (i<fin) {
         i++
     }
    
-    
 }
 
 
-for (inicio; inicio <= fin; inicio++){
+//for
 
-    
+for (inicio; inicio <= inicio++) {
+    if (inicio % 3 === 0) {
+        console.log (inicio);
+    }
+
 }
