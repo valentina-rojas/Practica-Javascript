@@ -3,32 +3,38 @@
 //  el promedio de edad de las mujeres.
 
 
+
 const persona = [
 
     {
     nombre: "juan",
     edad: 25,
     sexoBiologico: "hombre" ,
-   
     },
 
     {
     nombre: "jorge",
     edad: 35,
     sexoBiologico: "hombre",
-   
     },
 
     {
     nombre: "maria",
     edad: 84,
     sexoBiologico: "mujer",
-   
     },
-]
+
+    {
+    nombre: "lucia",
+    edad: 59,
+    sexoBiologico: "mujer",
+    },
+
+];
 
 
-//promedio de las edades
+
+// promedio general de edad
 
 let acumulador = 0
 
@@ -38,30 +44,72 @@ persona.map(( item) => {
 
 const promedio = acumulador/persona.length
 
-
-// promedio personas de sexo femenino
-
-persona.filter((item) => item.edad).map ((item) =>
-
-   map((i) => {
-    acumulador = acumulador + item;
-  })
-
-  
+console.log ("El promedio de todas las edades es de " + promedio)
 
 
 
 
 
 
-let mayor = 0
+//nombre de la mujer con mayor edad
 
-if persona.map((item) => item > item.edad && item.sexoBiologico === "mujer") {
+let MujerMayor = 0;
+let NombreMM = "";
 
-    item = item.edad
+persona.filter((item) => item.sexoBiologico === "mujer").map((item) => {
 
-    console.log(mujer de mayor edad) (nombre)
+if  (item.edad > MujerMayor) {
+    MujerMayor = item.edad
+    NombreMM = item.nombre
 }
+
+})
+
+console.log("Nombre de la mujer con mayor edad: " + NombreMM);
+
+
+
+
+
+
+//nombre del hombre con menor edad
+
+let HombreMenor = Infinity;
+let NombreHM = {};
+
+persona.filter((item) => item.sexoBiologico === "hombre").map((item) =>  {
+
+if (item.edad < HombreMenor){
+    HombreMenor = item.edad;
+    NombreHM = item.nombre
+}
+
+}) 
+
+console.log("Nombre del hombre con menor edad: " + NombreHM);
+
+
+
+
+
+// el promedio de edad de las mujeres.
+
+let acumulador2 = 0
+let contadorM = 0
+
+
+persona.filter(( item) => item.sexoBiologico === "mujer").map(( item) => {
+    acumulador2 = acumulador2 + item.edad;
+        contadorM++
+})
+
+
+const promedioM = acumulador2/contadorM
+
+console.log ("El promedio de las edades de las mujeres es de " + promedioM)
+
+
+
 
 
 

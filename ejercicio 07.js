@@ -4,24 +4,29 @@ let inicio= 5
 let fin = 50
 
 
+//while
 
-let i = n1 + 1
+let i = inicio + 1
 
 while (i<fin) {
 
-    if ( i % 3 === 0) {
-        console.log (i)
-        i++
+    if ( i % 3 == 0) {
+        console.log(i);
     }
    
+    i++
 }
 
 
 //for
 
-for (inicio; inicio <= inicio++) {
-    if (inicio % 3 === 0) {
-        console.log (inicio);
-    }
+let inicio2= 50
+let fin2 = 100
 
-}
+
+for (let i = inicio2; i <= fin2; i++) {
+    if (i % 3 == 0) {
+      console.log(i);
+    }
+  }
+
